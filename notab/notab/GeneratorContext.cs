@@ -5,7 +5,7 @@
     /// abstract class represents the directory to which the CodeGenerator is to
     /// write and other information about the context in which the Generator runs.
     /// </summary>
-    public abstract class GeneratorContext
+    public class GeneratorContext
     {
          
     }

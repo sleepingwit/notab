@@ -1,12 +1,10 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace notab
 {
     public abstract class CodeGenerator
     {
-        public virtual bool Generate(Descriptor descriptor, GeneratorContext contentxt)
-        {
-            throw new NotImplementedException();
-        }
+        public abstract bool Generate(ICollection<Descriptor> descriptors, GeneratorContext context);
     }
 }

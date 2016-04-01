@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using notab.compiler.csharp;
 
 namespace notab
@@ -10,8 +11,8 @@ namespace notab
             CommandLineInterface cli = new CommandLineInterface();
             
             CSharpCodeGenerator csharpGenerator = new CSharpCodeGenerator();
-            cli.RegisterGenerator("-csharp_out", csharpGenerator); 
-            
+            cli.RegisterGenerator("-csharp_out", csharpGenerator);
+
             return cli.Run(args);
         }
     }
